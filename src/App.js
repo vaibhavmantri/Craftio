@@ -75,9 +75,9 @@ function App() {
   useEffect(() => {
     db.collection("posts").onSnapshot(snapshot => {
       setPost(
-        snapshot.docs.map(doc => ({
+        snapshot.docs.map((doc) => ({
           id: doc.id,
-          post: doc.data(),
+          data: doc.data(),
         }))
       );
     });
