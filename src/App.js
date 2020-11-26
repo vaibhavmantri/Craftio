@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function App() {
-  const [post, setPost] = useState([]);
+  const [posts, setPosts] = useState([]);
   const [open, setOpen] = useState(false);
   const [openSignIn, setOpenSignIn] = useState(false);
   const [username, setUsername] = useState('');
@@ -48,13 +48,13 @@ function App() {
         //User logged in
         console.log(authUser);
         setUser(authUser);
-        if(authUser.displayName){
+      //   if(authUser.displayName){
 
-        }else {
-          return authUser.updateProfile({
-            displayName: username
-          })
-        }
+      //   }else {
+      //     return authUser.updateProfile({
+      //       displayName: username
+      //     })
+      //   }
       }
       else{
         setUser(null);
@@ -73,14 +73,12 @@ function App() {
   const classes = useStyles();
 
   useEffect(() => {
-    db.collection("posts").onSnapshot(snapshot => {
-      setPost(
-        snapshot.docs.map((doc) => ({
-          id: doc.id,
-          data: doc.data(),
-        }))
-      );
-    });
+    db.collection('posts').orderBy('timestamp','desc').onSnapshot(snapshot => {
+      setPosts(snapshot.docs.map(doc => ({
+        id:doc.id,
+        post:doc.data()
+      })))
+    })
   }, []);
 
   const signUp = (event) => {
@@ -93,6 +91,8 @@ function App() {
       })
     })
     .catch((error) => alert(error.message))
+
+    setOpen(false)
   }
 
   const signIn = (event) => {
@@ -178,22 +178,17 @@ function App() {
             <Button onClick={() => setOpen(true)}>Sign Out</Button>
           </div>
         )}
-        
-
-        {/* <h1>We building an instagram ckone</h1> */}
       </div>
 
-      {post.map(({ id, post }) => (
+      {posts.map(({id,post }) => (
         <Post
           key={id}
+          user = {user}
           username={post.username}
           caption={post.caption}
           imageURL={post.imageURL}
         />
       ))}
-
-      {/* Header */}
-      {/* Posts */}
     </div>
   );
 }
