@@ -1,71 +1,99 @@
-# Getting Started with Create React App
+## Instagram Clone using React JS
+<h4>This is an Instagram Clone where the user can <strong>Sign Up</strong> and <strong>Sign In</strong> and the database and user authentication is done using </h4> <h4><a href = 'https://firebase.google.com/'>Firebase</a></h4>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+***
 
-## Available Scripts
+### Images
+<img src = './images/main.PNG'>
+<br>
+<img src = ./images/singup.PNG>
+<br>
+<img src = './images/singin.PNG'><br>   
 
-In the project directory, you can run:
+***
 
-### `npm start`
+### Install Node JS:-
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<strong><a href = "https://nodejs.org/dist/v14.15.1/node-v14.15.1-x64.msi">Windows </a></strong>
+<strong><a href = 'https://nodejs.org/dist/v14.15.1/node-v14.15.1.pkg'>Linux/MacOS</a></strong>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+***
 
-### `npm test`
+### Prerequisites:-
+<li /> <a href = "https://nodejs.org/en/">nodejs v6.11.3 or later</a>
+<li> <a href = "https://firebase.google.com/">Firebase </a></li>
+<li> <a href = "https://material-ui.com/">Material UI</a></li>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+***
 
-### `npm run build`
+### Installing:- 
+<h4>Clone the Repository by copying the following commands on your terminal/bash.</h4>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ ```Javascript
+    git clone https://github.com/vaibhavmantri/instagram-clone.git 
+ ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h4>Or simply Download .zip file and run the following commands in your terminal/bash/shell</h4>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+   npm install
+```
+<h4>This will install all the dependencies which are required for the above project to run in your system</h4>
 
-### `npm run eject`
+***
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Building the Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<strong>Install</strong>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+yarn
+```
+or 
+```
+npm install
+```
 
-## Learn More
+To Run this whole setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+yarn start
+```
+or 
+```
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<strong>Build</strong>
 
-### Code Splitting
+Build for current platform
+```
+yarn run build
+```
+Build for Windows
+```
+yarn run build_windows
+```
+Build for MacOS
+```
+yarn run build_mac
+```
+Build for Linux
+```
+yarn run build_linux
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Libraries Used
 
-### Analyzing the Bundle Size
+<li /><a href = "https://reactjs.org/docs/getting-started.html">React JS</a></li>
+<li /><a href = "https://devdocs.io/html/">HTML 5</a></li>
+<li /><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS">CSS 3</a></li>
+<li /><a href = "https://redux.js.org/">Redux</a></li>
+<li /><a href = "https://firebase.google.com/docs/firestore">Firebase Firestore</a></li>
+<li /><a href = "https://firebase.google.com/docs/hosting">Firebase Hosting</a></li>
+<li /><a href = "https://firebase.google.com/docs/auth">Firebase Authentication</a></li>
+<li /><a href = "https://material-ui.com/getting-started/installation/">Material UI(Icons/Modals)</a></li>
+<li /><a href = "https://fonts.google.com/">Google Fonts</a></li>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# instagram-clone

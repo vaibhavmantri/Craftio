@@ -16,6 +16,10 @@
 }
 .app_signup{
   display: flex;
-  align-items: center;
+  align-items: cmenter;
   flex-direction: column;
+}
+.app_header{
+  display: flex;
+  justify-content: space-between;
 }

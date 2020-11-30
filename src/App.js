@@ -118,11 +118,7 @@ function App() {
 
   return (
     <div className="App">
-      {user?.displayName ? (
-        <ImageUpload username={user.displayName} />
-      ) : (
-        <h3>Sorry login first</h3>
-      )}
+      
 
       <Modal open={open} onClose={() => setOpen(false)}>
         <div style={modalStyle} className={classes.paper}>
@@ -195,7 +191,7 @@ function App() {
         ) : (
           <div className="app_loginContainer">
             <Button onClick={() => setOpenSignIn(true)}>Sign In</Button>
-            <Button onClick={() => setOpen(true)}>Sign Out</Button>
+            <Button onClick={() => setOpen(true)}>Sign Up</Button>
           </div>
         )}
       </div>
@@ -209,6 +205,11 @@ function App() {
           imageURL={post.imageUrl}
         />
       ))}
+      {user?.displayName ? (
+        <ImageUpload username={user.displayName} />
+      ) : (
+        <h3>Sorry login first</h3>
+      )}
     </div>
   );
 }

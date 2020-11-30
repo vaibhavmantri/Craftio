@@ -1,0 +1,38 @@
+.imageupload{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #566573;
+    border-top: 1px solid lightgrey;
+    position: fixed;
+    bottom: 0;
+
+}
+.imageupload_progress{
+    width: 100%;
+}
+.input_caption{
+    background-color: #B2BABB;
+    color: white;
+    padding: 5px;
+}
+.upload_button{
+    background-color: #ECF0F1;
+    color: #212F3D;
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+}
+.upload_button:hover{
+    background-color: #5D6D7E;
+    color: white;
+    transition: 1s;
+
+}
+.upload_file{
+    margin: auto;
+}
