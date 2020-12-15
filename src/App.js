@@ -123,11 +123,12 @@ function App() {
       <Modal open={open} onClose={() => setOpen(false)}>
         <div style={modalStyle} className={classes.paper}>
           <form className="app_signup">
-            <img
+            {/* <img
               className="app_headerImage"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/840px-Instagram_logo.svg.png"
               alt=""
-            />
+            /> */}
+            <p className = "project_name">Craftio</p>
             <Input
               type="text"
               placeholder="username"
@@ -155,11 +156,12 @@ function App() {
       <Modal open={openSignIn} onClose={() => setOpenSignIn(false)}>
         <div style={modalStyle} className={classes.paper}>
           <form className="app_signup">
-            <img
+            {/* <img
               className="app_headerImage"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/840px-Instagram_logo.svg.png"
               alt=""
-            />
+            /> */}
+            <p className = "project_name">Craftio</p>
             <Input
               type="text"
               placeholder="email"
@@ -180,11 +182,12 @@ function App() {
       </Modal>
 
       <div className="app_header">
-        <img
+        {/* <img
           className="app_headerImage"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/840px-Instagram_logo.svg.png"
           alt=""
-        ></img>
+        ></img> */}
+        <p className = "project_name">Craftio</p>
 
         {user ? (
           <Button onClick={() => auth.signOut()}>Logout</Button>
@@ -195,21 +198,22 @@ function App() {
           </div>
         )}
       </div>
-
+      {user?.displayName ? (
+        <ImageUpload username={user.displayName} />
+      ) : (
+        <h3>Sorry login first</h3>
+      )}
       {posts.map(({ id, post }) => (
         <Post
           key={id}
+          postId = {id}
           user={user}
           username={post.username.username}
           caption={post.caption}
           imageURL={post.imageUrl}
         />
       ))}
-      {user?.displayName ? (
-        <ImageUpload username={user.displayName} />
-      ) : (
-        <h3>Sorry login first</h3>
-      )}
+      
     </div>
   );
 }

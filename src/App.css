@@ -23,3 +23,8 @@
   display: flex;
   justify-content: space-between;
 }
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.project_name{
+  font-size: 60px;
+  font-family: 'Lobster', cursive;
+}

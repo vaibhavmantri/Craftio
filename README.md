@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> 28e40fb5310228d044fdc99b5b12323a40d3a265
 ## Instagram Clone using React JS
 <h4>This is an Instagram Clone where the user can <strong>Sign Up</strong> and <strong>Sign In</strong> and the database and user authentication is done using </h4> <h4><a href = 'https://firebase.google.com/'>Firebase</a></h4>
 
@@ -99,5 +103,10 @@ yarn run build_linux
 <li /><a href = "https://fonts.google.com/">Google Fonts</a></li>
 
 =======
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 28e40fb5310228d044fdc99b5b12323a40d3a265
 https://instagram-clone-fdd9f.web.app/
 >>>>>>> 0a35badcf49d82e31c0f8a8c95898aa34b648a87
