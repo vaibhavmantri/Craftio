@@ -9,7 +9,7 @@
     background-color: #566573;
     border-top: 1px solid lightgrey;
     position: fixed;
-    /* bottom: 0; */
+    bottom: 0;
 
 }
 .imageupload_progress{

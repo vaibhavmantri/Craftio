@@ -123,11 +123,6 @@ function App() {
       <Modal open={open} onClose={() => setOpen(false)}>
         <div style={modalStyle} className={classes.paper}>
           <form className="app_signup">
-            {/* <img
-              className="app_headerImage"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/840px-Instagram_logo.svg.png"
-              alt=""
-            /> */}
             <p className = "project_name">Craftio</p>
             <Input
               type="text"
@@ -156,11 +151,7 @@ function App() {
       <Modal open={openSignIn} onClose={() => setOpenSignIn(false)}>
         <div style={modalStyle} className={classes.paper}>
           <form className="app_signup">
-            {/* <img
-              className="app_headerImage"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/840px-Instagram_logo.svg.png"
-              alt=""
-            /> */}
+            
             <p className = "project_name">Craftio</p>
             <Input
               type="text"
@@ -182,11 +173,7 @@ function App() {
       </Modal>
 
       <div className="app_header">
-        {/* <img
-          className="app_headerImage"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/840px-Instagram_logo.svg.png"
-          alt=""
-        ></img> */}
+        
         <p className = "project_name">Craftio</p>
 
         {user ? (
