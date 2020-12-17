@@ -96,6 +96,3 @@ yarn run build_linux
 <li /><a href = "https://firebase.google.com/docs/auth">Firebase Authentication</a></li>
 <li /><a href = "https://material-ui.com/getting-started/installation/">Material UI(Icons/Modals)</a></li>
 <li /><a href = "https://fonts.google.com/">Google Fonts</a></li>
-<p style = "margin:auto">
-****
-</p>
