@@ -96,12 +96,6 @@ yarn run build_linux
 <li /><a href = "https://firebase.google.com/docs/auth">Firebase Authentication</a></li>
 <li /><a href = "https://material-ui.com/getting-started/installation/">Material UI(Icons/Modals)</a></li>
 <li /><a href = "https://fonts.google.com/">Google Fonts</a></li>
-
-=======
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 28e40fb5310228d044fdc99b5b12323a40d3a265
-https://instagram-clone-fdd9f.web.app/
->>>>>>> 0a35badcf49d82e31c0f8a8c95898aa34b648a87
+<p style = "margin:auto">
+****
+</p>
